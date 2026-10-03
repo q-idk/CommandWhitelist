@@ -65,7 +65,7 @@ public class ConfigCache {
         config.addDefault("message_type", MessageType.CHAT.toString(), "Valid message types are CHAT and ACTIONBAR and CHAT_AND_ACTION. Does nothing on velocity.");
 
         //Sound Configuration
-        config.addDefault("command_denied_sound.enabled", false);
+        config.addDefault("command_denied_sound.enabled", false, "Does nothing on velocity.");
         config.addDefault("command_denied_sound.key", "entity.villager.no");
         config.addDefault("command_denied_sound.volume", 1.0f);
         config.addDefault("command_denied_sound.pitch", 1.0f);

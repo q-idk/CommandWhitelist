@@ -57,7 +57,7 @@ public class ConfigCache {
         if (canDoProtocolLib)
             config.addDefault("use_protocollib", false, "Do not enable if you don't have issues with aliased commands.\nThis requires server restart to take effect.");
 
-        config.addDefault("message_type", MessageType.CHAT.toString(), "Valid message types are CHAT and ACTIONBAR. Does nothing on velocity.");
+        config.addDefault("message_type", MessageType.CHAT.toString(), "Valid message types are CHAT and ACTIONBAR and CHAT_AND_ACTION. Does nothing on velocity.");
 
         if (config.isNew()) {
             List<String> exampleCommands = new ArrayList<>();

@@ -57,7 +57,7 @@ public class PlayerCommandPreProcessListener implements Listener {
                     float soundPitch = config.command_denied_sound_pitch;
                     audiences.player(player).playSound(Sound.sound(sound, Sound.Source.UI, soundVolume, soundPitch));
                 } catch (Exception e) {
-                    CommandWhitelistBukkit.getConfigCache().warn("Invalid sound. unable to play sound!");
+                    config.warn("Invalid sound. unable to play sound!");
                 }
             }
             return;
